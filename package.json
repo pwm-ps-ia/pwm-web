@@ -1,0 +1,23 @@
+{
+  "name": "pwm-web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx live-server ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pwm-ps-ia/pwm-web.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pwm-ps-ia/pwm-web/issues"
+  },
+  "homepage": "https://github.com/pwm-ps-ia/pwm-web#readme",
+  "dependencies": {
+    "live-server": "^1.2.2"
+  }
+}
