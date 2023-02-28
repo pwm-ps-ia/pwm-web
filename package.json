@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npx live-server ./"
+    "start": "npx nodemon index.js",
+    "scss": "node-sass —watch /*/*.scss -o css"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,9 @@
   },
   "homepage": "https://github.com/pwm-ps-ia/pwm-web#readme",
   "dependencies": {
-    "live-server": "^1.2.2"
+    "express": "^4.18.2",
+    "live-server": "^1.2.2",
+    "node-sass": "^8.0.0",
+    "nodemon": "^2.0.20"
   }
 }
