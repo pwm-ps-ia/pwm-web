@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body {
+  background-color: #f5f5f5;
+}
+
+.button--primary, .header__buttons__login {
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 10px 40px;
+  background-color: #f54e4e;
+  color: white;
+  margin: 0px;
+  border: 2px #f54e4e solid;
+  font-weight: 500;
+}
+.button--secondary, .header__buttons__register {
+  margin: 0px;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 10px 40px;
+  border: 2px #f54e4e solid;
+  color: #f54e4e;
+  font-weight: 500;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #ffffff;
+}
+.header__logo {
+  width: 180px;
+}
+.header__navigation {
+  list-style-type: none;
+  display: flex;
+  gap: 30px;
+}
+.header__navigation__element a {
+  color: #4f4f4f;
+  text-decoration: none;
+}
+.header__navigation__element--active a {
+  color: #f54e4e;
+  font-weight: 600;
+}
+.header__buttons {
+  gap: 10px;
+  display: flex;
+}
+body {
+  background-color: #f5f5f5;
+}
+
+.hero {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+.hero__left {
+  flex: 1;
+  color: #272727;
+}
+.hero__left h1 {
+  margin: 0px !important;
+  padding: 0px !important;
+  font-size: 40px;
+}
+.hero__left h3 {
+  font-weight: 400;
+  color: #4f4f4f;
+}
+.hero__left__buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.hero__right {
+  flex: 1;
+  color: #272727;
+}
+
+.mt-header {
+  margin-top: 150px;
+}
+
+.container {
+  height: 100px;
+  width: 80%;
+  margin: auto;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/*# sourceMappingURL=index.css.map */

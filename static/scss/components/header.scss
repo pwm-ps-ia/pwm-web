@@ -1,0 +1,45 @@
+@import "../../scss/theme/colors.scss";
+@import "../../scss/theme/components.scss";
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: $background-primary;
+
+  &__logo {
+    width: 180px;
+  }
+
+  &__navigation {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+    &__element {
+      a {
+        color: $text-secondary;
+        text-decoration: none;
+      }
+      &--active {
+        a {
+          color: $brand;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+  &__buttons {
+    gap: 10px;
+    display: flex;
+    &__login {
+      @extend .button--primary;
+    }
+    &__register {
+      @extend .button--secondary;
+    }
+  }
+}

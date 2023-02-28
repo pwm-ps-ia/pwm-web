@@ -1,0 +1,21 @@
+.button {
+  &--primary {
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 10px 40px;
+    background-color: $brand;
+    color: white;
+    margin: 0px;
+    border: 2px $brand solid;
+    font-weight: 500;
+  }
+  &--secondary {
+    margin: 0px;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 10px 40px;
+    border: 2px $brand solid;
+    color: $brand;
+    font-weight: 500;
+  }
+}
