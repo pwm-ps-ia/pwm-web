@@ -1,6 +1,9 @@
 @import "../theme/colors.scss";
 
 .hero {
+  &--reverse {
+    flex-flow: row-reverse;
+  }
   display: flex;
   width: 100%;
   align-items: center;
@@ -28,5 +31,27 @@
   &__right {
     flex: 1;
     color: $text-primary;
+  }
+}
+
+.brands {
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  justify-items: center;
+
+  &__title {
+    color: $text-primary;
+    font-weight: 500;
+  }
+  &__list {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+
+    &__item {
+      width: 100%;
+      max-width: 200px;
+    }
   }
 }

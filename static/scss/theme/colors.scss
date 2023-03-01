@@ -4,6 +4,22 @@ $background-primary: #ffffff;
 $background-secondary: #f5f5f5;
 $brand: #f54e4e;
 
+h1,
+h2,
+h3 {
+  font-weight: 600;
+  color: $text-primary;
+}
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  color: $text-secondary;
+}
+p {
+  color: $text-secondary;
+}
+
 body {
   background-color: $background-secondary;
 }

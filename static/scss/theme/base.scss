@@ -1,11 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-.mt-header {
-  margin-top: 150px;
-}
+@import "../theme/colors.scss";
+
 .container {
-  height: 100px;
   width: 80%;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 body {
@@ -13,4 +12,83 @@ body {
   position: relative;
   margin: 0 !important;
   padding: 0 !important;
+}
+
+.highlighted {
+  color: $brand;
+}
+
+.sidebar {
+  &__left {
+    width: 298px;
+    background-color: $background-primary;
+    height: 100vh;
+    position: fixed;
+    border-right: 2px solid $background-secondary;
+
+    &__container {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      position: relative;
+      padding: 90px 20px;
+
+      &__element {
+        cursor: pointer;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-weight: 500;
+        background-color: $background-secondary;
+        padding: 10px 15px;
+
+        i {
+          color: $text-secondary;
+        }
+
+        &--active {
+          background-color: $brand;
+          i {
+            color: white;
+          }
+          p {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+  &__container {
+    padding-top: 90px;
+    margin-left: 300px;
+    &__documentation {
+      padding: 30px;
+    }
+  }
+}
+
+.input {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px 20px;
+  border: 0px solid;
+  border-radius: 10px;
+
+  &--secondary {
+    background-color: $background-secondary;
+  }
+
+  &--primary {
+    background-color: $background-primary;
+  }
+}
+
+.bg--secondary {
+  background-color: $background-secondary;
+}
+
+.bg--primary {
+  background-color: $background-primary;
 }

@@ -1,0 +1,27 @@
+@for $i from 0 through 50 {
+  .pl-#{$i} {
+    padding-left: 7px * $i !important;
+  }
+}
+
+@for $i from 0 through 50 {
+  .pr-#{$i} {
+    padding-right: 7px * $i !important;
+  }
+}
+
+@for $i from 0 through 50 {
+  .pb-#{$i} {
+    padding-bottom: 7px * $i !important;
+  }
+}
+
+@for $i from 0 through 50 {
+  .pt-#{$i} {
+    padding-top: 7px * $i !important;
+  }
+}
+
+.pt-header {
+  padding-top: 300px;
+}

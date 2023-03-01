@@ -1,0 +1,22 @@
+@import "../../scss/theme/colors.scss";
+@import "../../scss/theme/components.scss";
+
+.footer {
+  width: 100%;
+  background-color: $background-primary;
+
+  &__container {
+    z-index: 200;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  &__social-media {
+    &__list {
+      color: $text-primary;
+      font-size: 20px;
+      gap: 20px;
+      display: flex;
+    }
+  }
+}
