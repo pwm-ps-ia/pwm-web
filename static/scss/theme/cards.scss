@@ -1,13 +1,11 @@
-.team {
-  &__title {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-
+.base-card {
+  cursor: pointer;
+  flex-direction: column;
+  display: flex;
+  gap: 25px;
   &__list {
     display: flex;
-    gap: 20px;
+    gap: 25px;
 
     &__card {
       flex: 1;
@@ -17,7 +15,7 @@
 
       &__image {
         width: 100%;
-        height: 300px;
+        height: 200px;
         overflow: hidden;
 
         &__element {
@@ -27,11 +25,17 @@
           background-position: center;
 
           background-size: cover;
-          background-image: url("/static/images/pepe.jpg");
+          background-image: url("/static/images/elonmusk.jpg");
           background-repeat: no-repeat;
         }
       }
       &__body {
+        h2 {
+          font-size: 20px;
+        }
+        p {
+          font-size: 13px;
+        }
         &__container {
           padding: 50px;
         }
@@ -39,4 +43,9 @@
       }
     }
   }
+}
+
+.filters {
+  display: flex;
+  justify-content: space-between;
 }
