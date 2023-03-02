@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IAcademy</title>
+    <script src="http://www.w3schools.com/lib/w3data.js"></script>
+    <link rel="stylesheet" href="/static/css/index.css" />
+    <script
+      src="https://kit.fontawesome.com/6b1e82a8d1.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header
+      id="main_header"
+      w3-include-html="/components/navigation/header.html"
+    ></header>
+
+    <div class="container">
+      <section class="news-hero mt-30">
+        <h1>AI News</h1>
+      </section>
+      <section class="filters mb-5">
+        <div style="min-width: 400px">
+          <input class="input input--primary" placeholder="search new" />
+        </div>
+        <div style="min-width: 400px">
+          <select name="select" class="input input--primary">
+            <option value="value1">Value 1</option>
+            <option value="value2" selected>Buscar por categorias</option>
+            <option value="value3">Value 3</option>
+          </select>
+        </div>
+      </section>
+        <div class="base-card__list mb-5">
+            <div
+            w3-include-html="/components/cards/new.html"
+            ></div>
+            <div
+            w3-include-html="/components/cards/new.html"
+            ></div>
+            <div
+            w3-include-html="/components/cards/new.html"
+            ></div>
+            <div
+            w3-include-html="/components/cards/new.html"
+            ></div>
+        </div>
+        <div class="base-card__list mb-15">
+            <div
+            w3-include-html="/components/cards/new.html"
+            ></div>
+            <div
+            w3-include-html="/components/cards/new.html"
+            ></div>
+            <div
+            w3-include-html="/components/cards/new.html"
+            ></div>
+            <div
+            w3-include-html="/components/cards/new.html"
+            ></div>
+        </div>
+      </section>
+    </div>
+
+    <footer
+      w3-include-html="/components/navigation/footer.html"
+    ></footer>
+  </body>
+  <script>
+    w3IncludeHTML();
+  </script>
+</html>
