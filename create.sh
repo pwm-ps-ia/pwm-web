@@ -1,11 +1,10 @@
-command=$1
-name=$2
+command=${1:?"No hay comando"}
+name=${2:?"No hay nombre de fichero"}
 
 function create_component(){
-    mkdir -p "static/scss/$1/$2" "$1/$2"
+    mkdir -p "static/scss/$1" "$1"
 
-    touch "$1/$2.html"
-    touch "static/scss/$1/$2.scss"
+    touch "$1/$2.html" "static/scss/$1/$2.scss"
 }
 
 case $command in
