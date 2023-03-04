@@ -14,41 +14,47 @@
     ></script>
   </head>
 
-  <body style="min-height: 100vh; display: grid; grid-template-columns: auto 1fr auto;">
-    <div id="login__header">
-      <img class="header__logo" rc="/static/images/logo.png" />
-    </div>
-    <section style="padding: 150px; display: flex; flex-direction: column; ">
+  <body id="login__body" >
+    <main class="login">
+      <a href="/" id="login__header">
+        <img class="header__logo" src="/static/images/logo.png" />
+      </a>
 
-      <h2>Welcome back!</h2>
+      <section class="login__form">
 
-      <div class="sidebar__left__container__element">
-        <i class="fa-sharp fa-solid fa-rocket"></i>
-        <p class="mt-0 mb-0 mr-0 ml-0">Overview</p>
-      </div>
+        <h2>Welcome back!</h2>
 
-      <input
-        class="input input--secondary"
-        type="text"
-        placeholder="Enter your email"
-      />
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
 
-      <div>
-        <i class="fa-sharp fa-solid fa-compass"></i>
-        <p class="mt-0 mb-0 mr-0 ml-0">Get started</p>
-      </div>
+        <div class="login__text">
+          <i class="fa-sharp fa-solid fa-envelope"></i>
+          <p class="mt-0 mb-0 mr-0 ml-0">Email</p>
+        </div>
 
-      <input
-        class="input input--secondary"
-        type="text"
-        placeholder="****************"
-      />
-      
-      <div class="sidebar__left__container__element">
-        <i class="fa-solid fa-cubes"></i>
-        <p class="mt-0 mb-0 mr-0 ml-0">Examples</p>
-      </div>
-    </section>
+        <input
+          class="input input--secondary"
+          type="email"
+          placeholder="Enter your email"
+        />
+        
+        <div class="login__text">
+          <i class="fa-sharp fa-solid fa-key"></i>
+          <p class="mt-0 mb-0 mr-0 ml-0">Password</p>
+        </div>
+
+        <input
+          class="input input--secondary"
+          type="password"
+          placeholder="****************"
+        />
+        
+        <button class="login__button">
+          <p class="mt-0 mb-0 mr-0 ml-0">Sign in</p>
+        </button>
+      </section>
+    </main>
   </body>
   <script>
     w3IncludeHTML();
