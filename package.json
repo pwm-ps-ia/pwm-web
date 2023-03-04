@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npx nodemon index.js",
-    "scss": "node_modules/node-sass/bin/node-sass ./static/scss/index.scss ./static/css/index.css"
+    "scss-compile": "node_modules/node-sass/bin/node-sass ./static/scss/index.scss ./static/css/index.css",
+    "scss-watch": "node_modules/node-sass/bin/node-sass --watch ./static/scss/index.scss ./static/css/index.css"
   },
   "repository": {
     "type": "git",
