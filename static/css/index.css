@@ -163,6 +163,52 @@ p {
 body {
   background-color: #f5f5f5; }
 
+.sidebar__left {
+  width: 298px;
+  background-color: #ffffff;
+  border-right: 2px solid #f5f5f5; }
+  .sidebar__left__container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    position: relative;
+    padding: 90px 20px; }
+    .sidebar__left__container__element {
+      cursor: pointer;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 500;
+      background-color: #f5f5f5;
+      padding: 10px 15px; }
+      .sidebar__left__container__element i {
+        color: #4f4f4f; }
+      .sidebar__left__container__element--active {
+        background-color: #f54e4e; }
+        .sidebar__left__container__element--active i {
+          color: white; }
+        .sidebar__left__container__element--active p {
+          color: white; }
+
+h1,
+h2,
+h3 {
+  font-weight: 600;
+  color: #272727; }
+
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  color: #4f4f4f; }
+
+p {
+  color: #4f4f4f; }
+
+body {
+  background-color: #f5f5f5; }
+
 .hero {
   display: flex;
   width: 100%;
@@ -241,40 +287,6 @@ body {
 
 .highlighted {
   color: #f54e4e; }
-
-.sidebar {
-  /*&__container {  //TODO QUITAR
-    &__documentation {
-      padding: 30px;
-    }
-  }*/ }
-  .sidebar__left {
-    width: 298px;
-    background-color: #ffffff;
-    border-right: 2px solid #f5f5f5; }
-    .sidebar__left__container {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-      position: relative;
-      padding: 90px 20px; }
-      .sidebar__left__container__element {
-        cursor: pointer;
-        border-radius: 10px;
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        font-weight: 500;
-        background-color: #f5f5f5;
-        padding: 10px 15px; }
-        .sidebar__left__container__element i {
-          color: #4f4f4f; }
-        .sidebar__left__container__element--active {
-          background-color: #f54e4e; }
-          .sidebar__left__container__element--active i {
-            color: white; }
-          .sidebar__left__container__element--active p {
-            color: white; }
 
 .documentation {
   padding-top: 90px;
