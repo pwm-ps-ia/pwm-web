@@ -22,8 +22,8 @@ body {
   &__left {
     width: 298px;
     background-color: $background-primary;
-    height: 100vh;
-    position: fixed;
+    //height: 100vh;
+    //position: fixed;
     border-right: 2px solid $background-secondary;
 
     &__container {
@@ -59,13 +59,18 @@ body {
       }
     }
   }
-  &__container {
-    padding-top: 90px;
-    margin-left: 300px;
+  /*&__container {  //TODO QUITAR
     &__documentation {
       padding: 30px;
     }
-  }
+  }*/
+}
+
+.documentation {
+  padding-top: 90px;
+  padding-left: 30px;
+  //margin-left: 300px;
+  width: 900px;
 }
 
 .cursor-pointer {

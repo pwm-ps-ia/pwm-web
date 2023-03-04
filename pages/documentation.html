@@ -13,20 +13,20 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body>
+  <body style="min-height: 100vh; display: grid; grid-template-rows: auto 1fr auto;">
     <header
       id="main_header"
       w3-include-html="/components/navigation/header.html"
     ></header>
 
-    <div class="sidebar">
+    <div class="main" style="display: grid; grid-template-columns: auto 1fr auto;">
       <aside class="sidebar__left">
         <div class="sidebar__left__container">
           <h2>Documentacion</h2>
           <input
             class="input input--secondary"
             type="text"
-            placeholder="busca en la documentacion"
+            placeholder="Search"
           />
           <div class="sidebar__left__container__element">
             <i class="fa-sharp fa-solid fa-rocket"></i>
@@ -56,16 +56,29 @@
           </div>
         </div>
       </aside>
-      <div class="sidebar__container">
-        <section class="sidebar__container__documentation">
-          <h1>Documentacion de AI learning</h1>
-        </section>
-        <footer
-          id="main_header"
-          w3-include-html="/components/navigation/footer.html"
-        ></footer>
-      </div>
+  
+      <section class="documentation">
+        <h1>Documentacion de AI learning</h1>
+        <br><br>
+        <p>
+          Laudantium laudantium debitis soluta voluptas totam asperiores voluptas. 
+          Aspernatur incidunt est magni adipisci. Consequuntur sequi et pariatur.
+          Minus nisi alias quod. Ad reprehenderit totam atque reiciendis.<br>
+          Nobis eum sit odio possimus ipsa aut non nobis. Magnam est atque quam voluptatibus nesciunt et non.
+          Aut esse quia voluptatem eos ut harum aut et. Est quo consequuntur est suscipit reprehenderit deserunt. 
+          Aspernatur dolore nisi voluptas voluptatem. Non rerum culpa excepturi sint.<br>
+          Quis consequatur enim commodi maxime id fugit autem aut. At sint id ex quibusdam molestiae. 
+          Rerum dolorum cupiditate quia recusandae adipisci. Eos iste ea debitis sed.<br>
+          Repudiandae est molestias sit ratione quia porro dolores quis. Recusandae quis ad quos modi accusamus placeat sunt. 
+          Quam voluptatem quisquam voluptas recusandae tenetur. Esse consequatur quo in aliquam similique
+        </p>
+      </section>
     </div>
+    <footer
+      id="main_header"
+      w3-include-html="/components/navigation/footer.html"
+      style="position: relative;"
+    ></footer>
   </body>
   <script>
     w3IncludeHTML();
