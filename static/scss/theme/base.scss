@@ -18,54 +18,8 @@ body {
   color: $brand;
 }
 
-.sidebar {
-  &__left {
-    width: 298px;
-    background-color: $background-primary;
-    height: 100vh;
-    position: fixed;
-    border-right: 2px solid $background-secondary;
-
-    &__container {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-      position: relative;
-      padding: 90px 20px;
-
-      &__element {
-        cursor: pointer;
-        border-radius: 10px;
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        font-weight: 500;
-        background-color: $background-secondary;
-        padding: 10px 15px;
-
-        i {
-          color: $text-secondary;
-        }
-
-        &--active {
-          background-color: $brand;
-          i {
-            color: white;
-          }
-          p {
-            color: white;
-          }
-        }
-      }
-    }
-  }
-  &__container {
-    padding-top: 90px;
-    margin-left: 300px;
-    &__documentation {
-      padding: 30px;
-    }
-  }
+.cursor-pointer {
+  cursor: pointer;
 }
 
 .cursor-pointer {

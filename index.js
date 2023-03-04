@@ -29,6 +29,10 @@ app.get("/news", function (req, res) {
   res.sendFile(path.join(__dirname, "/pages/news.html"));
 });
 
+app.get("/login", function (req, res) {
+  res.sendFile(path.join(__dirname, "/pages/login.html"));
+});
+
 const liveReloadServer = livereload.createServer();
 liveReloadServer.server.once("connection", () => {
   setTimeout(() => {

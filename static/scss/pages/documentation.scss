@@ -1,0 +1,60 @@
+@import "../theme/colors.scss";
+
+.sidebar {
+    &__left {
+        width: 298px;
+        background-color: $background-primary;
+        border-right: 2px solid $background-secondary;
+
+        &__container {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        position: relative;
+        padding: 90px 20px;
+
+            &__element {
+                cursor: pointer;
+                border-radius: 10px;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                font-weight: 500;
+                background-color: $background-secondary;
+                padding: 10px 15px;
+
+                    i {
+                    color: $text-secondary;
+                    }
+
+                    &--active {
+                    background-color: $brand;
+                    i {
+                        color: white;
+                    }
+                    p {
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.documentation {
+    padding-top: 90px;
+    padding-left: 30px;
+    max-width: 900px;
+}
+
+#body__documentation {
+    min-height: 100vh; 
+    display: grid; 
+    grid-template-rows: auto 1fr auto;
+}
+
+#main__documentation {
+    display: grid; 
+    grid-template-columns: auto 1fr auto;
+}
