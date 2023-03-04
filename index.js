@@ -3,7 +3,7 @@ const express = require("express");
 const livereload = require("livereload");
 const connectLiveReload = require("connect-livereload");
 const app = express();
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 8081;
 const path = require("path");
 
 app.use(express.static("public"));
