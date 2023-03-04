@@ -25,3 +25,9 @@
 .pt-header {
   padding-top: 300px;
 }
+
+@for $i from 0 through 10 {
+  .col-#{$i} {
+    flex: $i !important;
+  }
+}

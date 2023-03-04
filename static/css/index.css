@@ -200,8 +200,8 @@ body {
   flex-flow: row-reverse;
 }
 .hero__left {
-  flex: 1;
   color: #272727;
+  width: 50%;
 }
 .hero__left h1 {
   margin: 0px !important;
@@ -218,8 +218,12 @@ body {
   gap: 10px;
 }
 .hero__right {
-  flex: 1;
+  width: 50%;
   color: #272727;
+}
+.hero__right img {
+  width: 100%;
+  border-radius: 20px;
 }
 
 .brands {
@@ -235,11 +239,11 @@ body {
 .brands__list {
   display: flex;
   justify-content: center;
-  gap: 50px;
+  gap: 70px;
 }
 .brands__list__item {
   width: 100%;
-  max-width: 200px;
+  height: 40px;
 }
 
 .news-hero {
@@ -2041,6 +2045,50 @@ body {
 
 .pt-header {
   padding-top: 300px;
+}
+
+.col-0 {
+  flex: 0 !important;
+}
+
+.col-1 {
+  flex: 1 !important;
+}
+
+.col-2 {
+  flex: 2 !important;
+}
+
+.col-3 {
+  flex: 3 !important;
+}
+
+.col-4 {
+  flex: 4 !important;
+}
+
+.col-5 {
+  flex: 5 !important;
+}
+
+.col-6 {
+  flex: 6 !important;
+}
+
+.col-7 {
+  flex: 7 !important;
+}
+
+.col-8 {
+  flex: 8 !important;
+}
+
+.col-9 {
+  flex: 9 !important;
+}
+
+.col-10 {
+  flex: 10 !important;
 }
 
 .base-card {
