@@ -365,6 +365,13 @@ body {
   background-color: #ffffff;
 }
 
+.img-placeholder {
+  border-radius: 20px;
+  background-color: #d1d1d1;
+  width: 100%;
+  height: 500px;
+}
+
 h1,
 h2,
 h3 {
@@ -2047,50 +2054,6 @@ body {
   padding-top: 300px;
 }
 
-.col-0 {
-  flex: 0 !important;
-}
-
-.col-1 {
-  flex: 1 !important;
-}
-
-.col-2 {
-  flex: 2 !important;
-}
-
-.col-3 {
-  flex: 3 !important;
-}
-
-.col-4 {
-  flex: 4 !important;
-}
-
-.col-5 {
-  flex: 5 !important;
-}
-
-.col-6 {
-  flex: 6 !important;
-}
-
-.col-7 {
-  flex: 7 !important;
-}
-
-.col-8 {
-  flex: 8 !important;
-}
-
-.col-9 {
-  flex: 9 !important;
-}
-
-.col-10 {
-  flex: 10 !important;
-}
-
 .base-card {
   cursor: pointer;
   flex-direction: column;
@@ -2137,6 +2100,50 @@ body {
 .filters {
   display: flex;
   justify-content: space-between;
+}
+
+.col-0 {
+  flex: 0 !important;
+}
+
+.col-1 {
+  flex: 1 !important;
+}
+
+.col-2 {
+  flex: 2 !important;
+}
+
+.col-3 {
+  flex: 3 !important;
+}
+
+.col-4 {
+  flex: 4 !important;
+}
+
+.col-5 {
+  flex: 5 !important;
+}
+
+.col-6 {
+  flex: 6 !important;
+}
+
+.col-7 {
+  flex: 7 !important;
+}
+
+.col-8 {
+  flex: 8 !important;
+}
+
+.col-9 {
+  flex: 9 !important;
+}
+
+.col-10 {
+  flex: 10 !important;
 }
 
 /*# sourceMappingURL=index.css.map */

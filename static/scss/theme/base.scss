@@ -96,3 +96,10 @@ body {
 .bg--primary {
   background-color: $background-primary;
 }
+
+.img-placeholder {
+  border-radius: 20px;
+  background-color: #d1d1d1;
+  width: 100%;
+  height: 500px;
+}
