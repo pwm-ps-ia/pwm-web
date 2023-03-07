@@ -5,10 +5,25 @@
   gap: 25px;
   &__list {
     display: flex;
-    gap: 25px;
+    flex-wrap: wrap;
+    width: 100%;
+
+    & > * {
+      flex: 0 0 25%;
+
+      @media (max-width: $lg) {
+        flex: 0 0 33.33%;
+      }
+      @media (max-width: $md) {
+        flex: 0 0 50%;
+      }
+      @media (max-width: $sm) {
+        flex: 0 0 100%;
+      }
+    }
 
     &__card {
-      flex: 1;
+      margin: 10px;
       border-radius: 20px;
       overflow: hidden;
       background-color: white;
@@ -48,4 +63,16 @@
 .filters {
   display: flex;
   justify-content: space-between;
+  gap: 20px;
+
+  @media (max-width: $lg) {
+    & > * {
+      width: 100%;
+    }
+    justify-content: stretch;
+  }
+
+  @media (max-width: $md) {
+    flex-direction: column;
+  }
 }

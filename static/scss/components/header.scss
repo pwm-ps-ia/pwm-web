@@ -1,5 +1,6 @@
 @import "../../scss/theme/colors.scss";
 @import "../../scss/theme/components.scss";
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -15,6 +16,10 @@
 
   &__logo {
     width: 180px;
+
+    @media (max-width: $md) {
+      width: 150px;
+    }
   }
 
   &__navigation {
@@ -33,6 +38,10 @@
         }
       }
     }
+
+    @media (max-width: $md) {
+      display: none !important;
+    }
   }
   &__buttons {
     gap: 10px;
@@ -42,6 +51,17 @@
     }
     &__register {
       @extend .button--secondary;
+    }
+
+    @media (max-width: $md) {
+      display: none !important;
+    }
+  }
+
+  &__hamburguer {
+    display: none;
+    @media (max-width: $md) {
+      display: block !important;
     }
   }
 }
