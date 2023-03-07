@@ -7,9 +7,18 @@
   display: flex;
   width: 100%;
   align-items: center;
+
+  @media (max-width: $md) {
+    flex-direction: column;
+  }
+
   &__left {
     color: $text-primary;
     width: 50%;
+
+    @media (max-width: $md) {
+      width: 100%;
+    }
 
     h1 {
       margin: 0px !important;
@@ -29,6 +38,9 @@
     }
   }
   &__right {
+    @media (max-width: $md) {
+      width: 100%;
+    }
     img {
       width: 100%;
       border-radius: 20px;
@@ -52,10 +64,15 @@
     display: flex;
     justify-content: center;
     gap: 70px;
+    @media (max-width: $md) {
+      flex-direction: column;
+    }
 
     &__item {
-      width: 100%;
       height: 40px;
+      @media (max-width: $md) {
+        height: 20px;
+      }
     }
   }
 }

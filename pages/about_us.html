@@ -16,7 +16,7 @@
     ></header>
 
     <div class="container">
-      <section class="hero mt-35 mb-25">
+      <section class="hero mt-35 mt-md-20 mb-25 mb-md-10">
         <div class="hero__left">
           <h1>
             Good <span class="highlighted">teams</span> make good
@@ -31,19 +31,15 @@
           <img src="/static/images/dummy.png">
         </div>
       </section class="team">
-      <section>
-        <h1 class="team__title mb-10">Our team</h1>
-        <div class="team__list mb-20">
-            <div
-            w3-include-html="/components/cards/team_card.html"
-            ></div>
-            <div
-            w3-include-html="/components/cards/team_card.html"
-            ></div>
-            <div
-            w3-include-html="/components/cards/team_card.html"
-            ></div>
-        </div>
+      <section >
+        <h1 class="mb-10" style="display: flex; justify-content: center;">Our team</h1>
+      <div class="base-card__list mb-5">
+        <div w3-include-html="/components/cards/team_card.html"></div>
+        <div w3-include-html="/components/cards/team_card.html"></div>
+        <div w3-include-html="/components/cards/team_card.html"></div>
+        <div w3-include-html="/components/cards/team_card.html"></div>
+        
+      </div>
       </section>
     </div>
 

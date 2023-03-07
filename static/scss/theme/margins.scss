@@ -13,7 +13,24 @@
 
 @for $i from 0 through 50 {
   .mb-#{$i} {
-    margin-bottom: 7px * $i !important;
+    margin-bottom: 7px * $i;
+  }
+
+  .mb-sm-#{$i} {
+    @media (max-width: $sm) {
+      margin-bottom: 7px * $i !important;
+    }
+  }
+  .mb-lg-#{$i} {
+    @media (max-width: $lg) {
+      margin-bottom: 7px * $i !important;
+    }
+  }
+
+  .mb-md-#{$i} {
+    @media (max-width: $md) {
+      margin-bottom: 7px * $i !important;
+    }
   }
 }
 
