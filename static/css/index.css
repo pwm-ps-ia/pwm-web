@@ -108,7 +108,7 @@ body {
     width: 180px; }
     @media (max-width: 1024px) {
       .header__logo {
-        width: 150px; } }
+        width: 140px; } }
   .header__navigation {
     list-style-type: none;
     display: flex;
