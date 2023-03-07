@@ -70,8 +70,10 @@
 
     &__item {
       height: 40px;
+      width: auto;
       @media (max-width: $md) {
-        height: 20px;
+        height: auto;
+        width: 120px;
       }
     }
   }
